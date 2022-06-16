@@ -9,6 +9,7 @@ body {
 	margin: 0 0;
 	font-family: "Open Sans", sans-serif;
 	background-color: rgb(87, 84, 84);
+	flex-wrap: wrap;
 }
 
 .header {
@@ -161,9 +162,20 @@ h5 {
 	text-align: center;
 }
 
-.about-images ul {
-	text-align: center;
-	word-spacing: 20px;
+.skills {
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 35px auto;
+	width: 50%;
+}
+
+.single-skills img {
+	flex-wrap: wrap;
+	width: 80px;
+	height: 80px;
 }
 
 .work-text {
@@ -180,6 +192,8 @@ h5 {
 }
 
 .work-container {
+	flex-wrap: wrap;
+	align-items: center;
 	margin: 35px auto;
 	width: 80%;
 	padding: 50px;
@@ -200,13 +214,31 @@ h5 {
 	padding: 50px;
 }
 
-.te {
-	float: left;
+ .te{
+	flex-wrap: wrap;
+	text-align: left;
 	padding-left: 265px;
 	color: rgb(208, 178, 8);
 	font-size: 25px;
 }
 
-.main-container {
+.wrapper h6 {
+	text-align: center;
+	font-size: 30px;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.img-area {
+	display: flex;
 	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.single-img {
+	padding: 0 20px 20px;
+}
+
+img:hover {
+	opacity: 0.5;
+	transition: 0.9s;
 }
